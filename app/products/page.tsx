@@ -77,9 +77,6 @@ export default function Products() {
             transition={{ duration: 0.8 }}
             className="text-center max-w-4xl mx-auto"
           >
-            <div className="flex justify-center mb-6">
-              <FaEgg className="text-7xl text-brand-orange" />
-            </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               <span className="text-white">Our </span>
               <span className="text-brand-yellow">Products</span>

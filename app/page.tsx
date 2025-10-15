@@ -50,53 +50,31 @@ export default function Home() {
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Left Content */}
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <h1 className="text-5xl md:text-7xl font-bold mb-6">
-                <span className="text-white">Premium</span>
-                <br />
-                <span className="text-brand-orange">Southern Drakensberg Mountains</span>
-                <br />
-                <span className="text-brand-yellow">Eggs</span>
-              </h1>
-              <p className="text-xl text-gray-300 mb-8">
-                Experience the difference of fresh, healthy eggs from chickens raised in the pristine air of the Southern Drakensberg mountains.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button href="/products" variant="primary" size="lg">
-                  View Products
-                </Button>
-                <Button href="/stockists" variant="outline" size="lg">
-                  Find a Stockist
-                </Button>
-              </div>
-            </motion.div>
-
-            {/* Right Content - Logo */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="flex justify-end"
-            >
-              <div className="relative w-96 h-96">
-                <div className="absolute inset-0 bg-brand-orange/20 rounded-full blur-3xl animate-pulse"></div>
-            <Image
-                  src="/Mountain Yolks Logo.png"
-                  alt="Mountain Yolks"
-                  width={400}
-                  height={400}
-                  className="relative z-10 drop-shadow-2xl"
-                  priority
-                />
-              </div>
-            </motion.div>
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center max-w-4xl mx-auto"
+          >
+            <h1 className="text-5xl md:text-7xl font-bold mb-6">
+              <span className="text-white">Premium</span>
+              <br />
+              <span className="text-brand-orange">Southern Drakensberg Mountains</span>
+              <br />
+              <span className="text-brand-yellow">Eggs</span>
+            </h1>
+            <p className="text-xl text-gray-300 mb-8">
+              Experience the difference of fresh, healthy eggs from chickens raised in the pristine air of the Southern Drakensberg mountains.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button href="/products" variant="primary" size="lg">
+                View Products
+              </Button>
+              <Button href="/stockists" variant="outline" size="lg">
+                Find a Stockist
+              </Button>
+            </div>
+          </motion.div>
         </div>
 
         {/* Scroll Indicator */}

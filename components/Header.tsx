@@ -22,15 +22,15 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3 group">
+          <Link href="/" className="flex items-center space-x-2 group">
             <Image
               src="/Mountain Yolks Logo.png"
               alt="Mountain Yolks"
-              width={80}
-              height={80}
-              className="w-16 h-16 md:w-20 md:h-20 object-contain transition-transform duration-200 group-hover:scale-110"
+              width={120}
+              height={120}
+              className="w-24 h-24 md:w-28 md:h-28 object-contain transition-transform duration-200 group-hover:scale-110"
             />
-            <span className="text-2xl md:text-3xl font-bold text-white">
+            <span className="text-xl md:text-2xl font-bold text-white">
               Mountain Yolks
             </span>
           </Link>
