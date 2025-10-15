@@ -54,24 +54,44 @@ export default function Products() {
       {/* Hero Section */}
       <section className="relative section-padding bg-gradient-to-br from-brand-dark via-black to-brand-dark">
         <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center max-w-4xl mx-auto"
-          >
-            <div className="flex justify-center mb-6">
-              <FaEgg className="text-7xl text-brand-orange" />
-            </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              <span className="text-white">Our </span>
-              <span className="text-brand-yellow">Products</span>
-            </h1>
-            <p className="text-xl text-gray-300 leading-relaxed">
-              Premium quality eggs from happy, healthy chickens. 
-              Taste the Mountain Yolks difference.
-            </p>
-          </motion.div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+            {/* Text Content */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-center lg:text-left"
+            >
+              <div className="flex justify-center lg:justify-start mb-6">
+                <FaEgg className="text-7xl text-brand-orange" />
+              </div>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">
+                <span className="text-white">Our </span>
+                <span className="text-brand-yellow">Products</span>
+              </h1>
+              <p className="text-xl text-gray-300 leading-relaxed">
+                Premium quality eggs from happy, healthy chickens. 
+                Taste the Mountain Yolks difference.
+              </p>
+            </motion.div>
+
+            {/* Product Image */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="relative"
+            >
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src="/mountain yolk product.jpg"
+                  alt="Mountain Yolks Premium Eggs"
+                  className="w-full h-auto object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
